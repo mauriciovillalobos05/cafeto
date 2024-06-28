@@ -5,3 +5,27 @@
     border-left: 20px solid transparent;
     border-right: 20px solid transparent;
   }
+
+  .cup {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-color: #90431d; /* Color de la taza */
+    border-radius: 0 0 50px 50px; /* Bordes redondeados en la parte inferior */
+    position: relative;
+    overflow: visible;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1); /* Sombra */
+    margin: 20px; /* Espaciado adicional */
+}
+
+.handle {
+    position: relative;
+    width: 100px;
+    height: 70px;
+    border: 10px solid #90431d; /* Color del asa */
+    border-radius: 50%;
+    top: 5px;
+    right: 30px;
+    background: transparent;
+    box-sizing: border-box;
+}
