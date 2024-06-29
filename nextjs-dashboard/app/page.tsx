@@ -33,7 +33,7 @@ export default function Page() {
           </Link>
           <Link
             href="/dashboard/contact"
-            className="flex items-center gap-5 rounded-lg bg-brown-700 px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-brown-100 md:text-base ml-20"
+            className="flex items-center gap-5 rounded-lg bg-brown-700 px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-brown-100 md:text-base ml-auto"
             >
             <span>Contacto</span> <PhoneIcon className="w-5 md:w-6" />
           </Link>
@@ -42,6 +42,11 @@ export default function Page() {
         <div className="flex flex-col justify-center gap-6 rounded-lg bg-brown-100 px-6 py-10 md:w-2/5 md:px-20">
           <div className={styles.cup}>
             <div className={styles.handle}/>
+              <div className={styles.steam}>
+                <div className={styles.steampart}></div>
+                <div className={styles.steampart}></div>
+                <div className={styles.steampart}></div>
+              </div>
           </div>
           <p className={`${lusitana.className} text-xl text-gray-800 md:text-3xl md:leading-normal`}>
             <strong>Bienvenido a Pasión Cafeto.</strong> Somos una empresa que

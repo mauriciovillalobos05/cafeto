@@ -1,31 +1,86 @@
 .shape {
-    height: 0;
-    width: 0;
-    border-bottom: 30px solid black;
-    border-left: 20px solid transparent;
-    border-right: 20px solid transparent;
-  }
+  height: 0;
+  width: 0;
+  border-bottom: 30px solid black;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+}
 
-  .cup {
-    display: inline-block;
-    width: 100px;
-    height: 100px;
-    background-color: #90431d; /* Color de la taza */
-    border-radius: 0 0 50px 50px; /* Bordes redondeados en la parte inferior */
-    position: relative;
-    overflow: visible;
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1); /* Sombra */
-    margin: 20px; /* Espaciado adicional */
+.cup-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 200px; /* Altura suficiente para el humo */
+}
+
+.cup {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  background-color: #90431d; /* Color de la taza */
+  border-radius: 0 0 50px 50px; /* Bordes redondeados en la parte inferior */
+  position: relative;
+  overflow: visible;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1); /* Sombra */
+  margin: 20px; /* Espaciado adicional */
 }
 
 .handle {
-    position: relative;
-    width: 100px;
-    height: 70px;
-    border: 10px solid #90431d; /* Color del asa */
-    border-radius: 50%;
-    top: 5px;
-    right: 30px;
-    background: transparent;
-    box-sizing: border-box;
+  position: relative;
+  width: 100px;
+  height: 70px;
+  border: 10px solid #90431d; /* Color del asa */
+  border-radius: 50%;
+  top: 5px;
+  right: 30px;
+  background: transparent;
+  box-sizing: border-box;
 }
+
+.steam {
+  position: absolute;
+  top: 10px;
+  left: 20%;
+  transform: translateX(-50%);
+}
+
+.steampart {
+  width: 10px;
+  height: 30px;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 50%;
+  opacity: 0;
+  position: absolute;
+  bottom: 0;
+  animation: steam 3s infinite;
+}
+
+.steampart:nth-child(1) {
+  left: 10px;
+  animation-delay: 0s;
+}
+
+.steampart:nth-child(2) {
+  left: 25px;
+  animation-delay: 1s;
+}
+
+.steampart:nth-child(3) {
+  left: 40px;
+  animation-delay: 2s;
+}
+
+@keyframes steam {
+  0% {
+    opacity: 0;
+    transform: translateY(0) scale(1);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-100px) scale(1.5);
+  }
+}
+
