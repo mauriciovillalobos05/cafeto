@@ -4,7 +4,7 @@ import AcmeLogo from '@/app/ui/acme-logo';
 
 export default function SideNav() {
   return (
-    <div className="flex flex-row items-center justify-between px-3 py-4 bg-brown-300 md:px-6">
+    <div className="flex flex-row items-center justify-between px-3 py-4 bg-blue-200 md:px-6">
       <Link href="/">
         <div className="w-32 text-white md:w-40">
           <AcmeLogo />

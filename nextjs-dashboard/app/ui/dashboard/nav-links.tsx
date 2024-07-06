@@ -9,6 +9,7 @@ import {
 import { usePathname } from 'next/navigation';
 import clsx from 'clsx';
 import Link from 'next/link';
+import { poppins } from '@/app/ui/fonts';
 
 const links = [
   { name: 'Home', href: '/dashboard', icon: HomeIcon },
@@ -31,7 +32,7 @@ export default function NavLinks() {
             key={link.name}
             href={link.href}
             className={clsx(
-              'flex h-[48px] grow items-center justify-center gap-2 rounded-md bg-brown-100 p-3 text-sm font-medium hover:bg-brown-100 hover:text-brown-400 md:flex-none md:justify-start md:p-2 md:px-3',
+              'flex h-[64px] grow items-center justify-center gap-2 rounded-md bg-brown-900 p-3 text-base font-medium hover:bg-brown-100 hover:text-brown-400 md:flex-none md:justify-start md:p-2 md:px-3flex h-[36px] w-[180px] grow items-center justify-center gap-2 rounded-md bg-brown-900 p-2 text-xs font-medium hover:bg-brown-100 hover:text-brown-400 md:flex-none md:justify-start md:p-2 md:px-3',
               { 'bg-brown-100 text-brown-400': isActive }
             )}
           >

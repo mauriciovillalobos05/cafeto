@@ -84,3 +84,35 @@
   }
 }
 
+/* Dentro de home.module.css u otro archivo CSS */
+.image-desktop {
+  width: 100%; /* Ajusta el ancho según el diseño */
+  height: auto; /* La altura se ajustará automáticamente */
+}
+
+.image-mobile {
+  width: 100%; /* Ajusta el ancho según el diseño */
+  height: auto; /* La altura se ajustará automáticamente */
+}
+
+@media (min-width: 768px) {
+  .image-desktop {
+    display: block;
+  }
+
+  .image-mobile {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .image-desktop {
+    display: none;
+  }
+
+  .image-mobile {
+    display: block;
+  }
+}
+
+
