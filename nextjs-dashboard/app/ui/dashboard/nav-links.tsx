@@ -4,18 +4,15 @@ import {
   HomeIcon,
   ShoppingCartIcon,
   TruckIcon,
-  PhoneIcon,
 } from '@heroicons/react/24/outline';
 import { usePathname } from 'next/navigation';
 import clsx from 'clsx';
 import Link from 'next/link';
-import { poppins } from '@/app/ui/fonts';
 
 const links = [
-  { name: 'Home', href: '/dashboard', icon: HomeIcon },
-  { name: 'Productos', href: '/dashboard/catalogue', icon: ShoppingCartIcon },
-  { name: 'Entregas', href: '/dashboard/deliveries', icon: TruckIcon },
-  { name: 'Contacto', href: '/dashboard/contact', icon: PhoneIcon },
+  { name: 'Home', href: '/home', icon: HomeIcon },
+  { name: 'Productos', href: '/productos', icon: ShoppingCartIcon },
+  { name: 'Entregas', href: '/pedidos', icon: TruckIcon },
 ];
 
 export default function NavLinks() {
@@ -32,7 +29,7 @@ export default function NavLinks() {
             key={link.name}
             href={link.href}
             className={clsx(
-              'flex h-[64px] grow items-center justify-center gap-2 rounded-md bg-brown-900 p-3 text-base font-medium hover:bg-brown-100 hover:text-brown-400 md:flex-none md:justify-start md:p-2 md:px-3flex h-[36px] w-[180px] grow items-center justify-center gap-2 rounded-md bg-brown-900 p-2 text-xs font-medium hover:bg-brown-100 hover:text-brown-400 md:flex-none md:justify-start md:p-2 md:px-3',
+              'flex h-[32px] grow items-center justify-center gap-2 rounded-md bg-brown-400 p-3 text-base font-medium hover:bg-brown-100 hover:text-brown-400 md:flex-none md:justify-start md:p-2 md:px-3flex h-[36px] w-[180px] grow items-center justify-center gap-2 rounded-md bg-brown-900 p-2 text-xs font-medium hover:bg-brown-100 hover:text-brown-400 md:flex-none md:justify-start md:p-2 md:px-3',
               { 'bg-brown-100 text-brown-400': isActive }
             )}
           >
