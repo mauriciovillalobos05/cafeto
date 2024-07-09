@@ -1,11 +1,11 @@
-import { useState } from 'react';
+import { useState, ReactNode } from 'react';
 
 interface DropdownButtonProps {
   title: string;
-  message: string;
+  children: ReactNode;
 }
 
-const DropdownButton: React.FC<DropdownButtonProps> = ({ title, message }) => {
+const DropdownButton: React.FC<DropdownButtonProps> = ({ title, children }) => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
   const toggleDropdown = () => {
@@ -31,7 +31,7 @@ const DropdownButton: React.FC<DropdownButtonProps> = ({ title, message }) => {
       </button>
       {isDropdownOpen && (
         <div className="mt-2 p-4 bg-brown-900 rounded-md shadow-md">
-          <p className="text-gray-800">{message}</p>
+          {children}
         </div>
       )}
     </div>

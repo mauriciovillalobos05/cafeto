@@ -27,7 +27,7 @@ export default function Page() {
           <p className={`${poppins.className} text-xl lg:text-3xl text-white mb-2`}>
             <strong>Pedidos</strong>
           </p>
-            <ul className={`${poppins.className} text-xl lg:text-xlmb-2`}>
+            <ul className={`${poppins.className} text-xl lg:text-xl mb-2`}>
                 <li>
                     Para realizar tu pedido mándanos un WhatsApp, 
                 </li>
@@ -60,22 +60,32 @@ export default function Page() {
             <strong>Métodos de pago</strong>
           </p>
           <p className="mb-4">
-          <DropdownButton 
-            title="Transferencia" 
-            message="Número de cuenta: 1234-5678-9012-3456" 
-          />
+            <DropdownButton title="Transferencia">
+              <strong>A nombre de:</strong>
+              <p className="mb-8">Edgar Jesús Contreras Piña</p>
+              <img src="/banorte.png" className="w-40 h-50" alt="Banorte" />
+              <strong>No. de Cuenta:</strong>
+              <p className="mb-4">0210217692</p>
+              <strong>Clabe:</strong>
+              <p className="mb-8">072320002102176920</p>
+              <img src="/bnmx.png" className="w-40 h-50" alt="Banamex" />
+              <strong>No. de Cuenta:</strong>
+              <p className="mb-4">7767462</p>
+              <strong>Clabe:</strong>
+              <p className="mb-4">002320701977674627</p>
+              <strong>Sucursal:</strong>
+              <p>7019</p>
+            </DropdownButton>
           </p>
           <p className="mb-4">
-          <DropdownButton 
-            title="Depósito en cualquier Oxxo" 
-            message="Número de cuenta: 1234-5678-9012-3456" 
-          />
+            <DropdownButton title="Depósito en cualquier Oxxo">
+              <p>Número de cuenta: #T 4152314024664792</p>
+            </DropdownButton>
           </p>
           <p className="mb-4">
-          <DropdownButton 
-            title="Pago con terminal" 
-            message="Número de cuenta: 1234-5678-9012-3456" 
-          />
+            <DropdownButton title="Pago con terminal">
+              <p>Número de cuenta: 1234-5678-9012-3456</p>
+            </DropdownButton>
           </p>
         </div>
       </div>
