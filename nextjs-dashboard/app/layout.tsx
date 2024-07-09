@@ -1,7 +1,7 @@
 import '@/app/ui/global.css';
 import { inter } from '@/app/ui/fonts';
 import SideNav from '@/app/ui/dashboard/sidenav';
-import BottomNav from './ui/dashboard/bottomnav';
+import ClientSideLayout from '@/app/ClientSideLayout';
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
@@ -11,12 +11,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <div className="w-full flex-none">
             <SideNav />
           </div>
-          <div className="flex-grow p-6 pt-0 md:overflow-y-auto md:p-12 md:pt-6">
+          <ClientSideLayout>
             {children}
-          </div>
-        </div>
-        <div className="side-nav">
-          <BottomNav />
+          </ClientSideLayout>
         </div>
       </body>
     </html>

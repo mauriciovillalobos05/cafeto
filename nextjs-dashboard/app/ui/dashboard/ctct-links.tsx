@@ -6,7 +6,7 @@ const links = [
   { name: 'Whatsapp', href: 'https://wa.me/3314873995', icon: '/wp.png' },
   { name: 'Facebook', href: 'https://www.facebook.com/share/TZu7j5fqj521SkzS/?mibextid=LQQJ4d', icon: '/fb.png' },
   { name: 'Instagram', href: 'https://www.instagram.com/pasion_cafeto?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==', icon: '/ig.png' },
-  { name: 'Mail', href: 'mailto:direccion@pasioncafeto.com', icon: '/mail.png' },
+  { name: 'Mail', href: 'mailto:direccion@pasioncafeto.com', icon: '/correo.png' },
 ];
 
 export default function CtctLinks() {

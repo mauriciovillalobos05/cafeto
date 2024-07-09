@@ -1,3 +1,3 @@
 export default function Page() {
-    return <p>Contact Page</p>;
+    return <p>Oaxaca</p>;
   }
