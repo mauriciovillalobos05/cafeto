@@ -3,6 +3,7 @@ import { useEffect } from 'react';
 import Link from 'next/link';
 import { poppins } from '@/app/ui/fonts';
 import Image from 'next/image';
+import '@/app/ui/global.css';
 
 export default function Page() {
   useEffect(() => {
@@ -19,6 +20,7 @@ export default function Page() {
           height={1343}
           objectFit="contain"
           alt="Captura de pantalla del proyecto de panel de control mostrando versión de escritorio"
+          className="image-animate"
         />
       </div>
       <div className="mb-8">
@@ -36,10 +38,11 @@ export default function Page() {
           <Image
             src="/mezclaespecial.png"
             layout="intrinsic"
-            width={400}  // Ajusta este valor según el tamaño deseado
-            height={566} // Mantén la proporción según el tamaño deseado
+            width={400}
+            height={566}
             objectFit="contain"
             alt="Imagen de Veracruz"
+            className="image-fade" // Aplica la clase aquí
           />
         </Link>
       </div>
@@ -53,20 +56,22 @@ export default function Page() {
           <Image
             src="/oaxaca.png"
             layout="intrinsic"
-            width={400}  
-            height={566} 
+            width={400}
+            height={566}
             objectFit="contain"
             alt="Imagen de Veracruz"
+            className="image-fade" 
           />
         </Link>
         <Link href="/catalogo/veracruz">
           <Image
             src="/veracruz.png"
             layout="intrinsic"
-            width={400}  
-            height={566} 
+            width={400}
+            height={566}
             objectFit="contain"
             alt="Imagen de Veracruz"
+            className="image-fade" 
           />
         </Link>
       </div>
@@ -75,10 +80,11 @@ export default function Page() {
           <Image
             src="/chiapas.png"
             layout="intrinsic"
-            width={400}  
-            height={566} 
+            width={400}
+            height={566}
             objectFit="contain"
             alt="Imagen de Veracruz"
+            className="image-fade" 
           />
         </Link>
       </div>
@@ -92,20 +98,22 @@ export default function Page() {
           <Image
             src="/honey.png"
             layout="intrinsic"
-            width={400}  
-            height={566} 
+            width={400}
+            height={566}
             objectFit="contain"
             alt="Imagen de Veracruz"
+            className="image-fade" 
           />
         </Link>
         <Link href="/catalogo/nayarit">
           <Image
             src="/nayarit.png"
             layout="intrinsic"
-            width={400}  
-            height={566} 
+            width={400}
+            height={566}
             objectFit="contain"
             alt="Imagen de Veracruz"
+            className="image-fade"
           />
         </Link>
       </div>

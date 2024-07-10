@@ -2,6 +2,7 @@
 import { useEffect } from 'react';
 import { poppins } from '@/app/ui/fonts';
 import Image from 'next/image';
+import '@/app/ui/global.css';
 
 export default function Page() {
   useEffect(() => {
@@ -18,6 +19,7 @@ export default function Page() {
           height={1385}
           objectFit="contain"
           alt="Captura de pantalla del proyecto de panel de control mostrando versión de escritorio"
+          className="image-animate"
         />
       </div>
       <div className="mb-4">
@@ -27,7 +29,7 @@ export default function Page() {
       </div>
       <div className="w-full md:max-w-lg mb-6">
         <img
-          src="/download.gif"
+          src="/inicio.gif"
           className="w-full"
           alt="Animación GIF mostrando algo relacionado con tu proyecto"
         />

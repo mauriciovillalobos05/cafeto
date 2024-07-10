@@ -38,3 +38,24 @@ body {
   bottom: 0;
   width: 100%;
 }
+
+.image-fade {
+  transition: opacity 0.5s ease-in-out;
+}
+
+.image-fade:hover {
+  opacity: 0.5;
+}
+
+.image-animate {
+  animation: grow 2s ease-in-out forwards;
+}
+
+@keyframes grow {
+  from {
+    transform: scale(0.8);
+  }
+  to {
+    transform: scale(1);
+  }
+}

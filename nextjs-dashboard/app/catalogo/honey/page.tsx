@@ -1,3 +1,60 @@
+'use client'
+import { useEffect } from 'react';
+import { poppins } from '@/app/ui/fonts';
+import Image from 'next/image';
+import DropdownButton from '@/app/DropDownButton';
+import PedidosLinks from '@/app/ui/dashboard/pedidos';
+
 export default function Page() {
-    return <p>Honey</p>;
-  }
+  useEffect(() => {
+    document.title = "Pedidos - Pasión Cafeto";
+  }, []);
+
+  return (
+    <main className="flex-col justify-start">
+      <div className="mt-4 flex grow flex-col gap-4 md:flex-row justify-center">
+        <div className="mt-4 flex grow flex-col p-4 rounded-md">
+        <Image
+            src="/honey.png"
+            layout="intrinsic"
+            width={400}
+            height={566}
+            objectFit="contain"
+            alt="Imagen de Honey"
+          />
+        </div>
+        <div className="mt-4 flex grow flex-col p-4 rounded-md">
+          <p className={`${poppins.className} text-xl lg:text-3xl mb-4`}>
+            <strong>Información General</strong>
+          </p>
+          <p className="mb-5">
+            <DropdownButton title="Perfil de taza">
+              <strong>Origen:</strong>
+              <p className="mb-4">AAAAAAAAAA</p>
+              <strong>Altura:</strong>
+              <p className="mb-4">NNNN-NNNN MSNM</p>
+              <strong>Tipo:</strong>
+              <p className="mb-4">AAAAAAA / AAAAA</p>
+              <strong>Nota de Cata:</strong>
+              <p className="mb-4">AAAAAAAA | AAAAAAA</p>
+              <strong>Puntaje:</strong>
+              <p className="mb-4">NN</p>
+            </DropdownButton>
+          </p>
+          <p className="mb-5">
+            <DropdownButton title="Tueste">
+              <img src="/tueste2.png" className="w-40 h-50" alt="Tueste2" />
+            </DropdownButton>
+          </p>
+          <p className="mb-5">
+            <DropdownButton title="Haz tu pedido">
+              <div className="flex flex-row items-center justify-between px-3 py-4 bg-gray-400 md:px-6">
+                <PedidosLinks />
+              </div>
+            </DropdownButton>
+          </p>
+        </div>
+      </div>
+    </main>
+  );
+}

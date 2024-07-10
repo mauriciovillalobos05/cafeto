@@ -30,7 +30,7 @@ const DropdownButton: React.FC<DropdownButtonProps> = ({ title, children }) => {
         </svg>
       </button>
       {isDropdownOpen && (
-        <div className="mt-2 p-4 bg-brown-900 rounded-md shadow-md">
+        <div className="mt-2 p-4 bg-gray-400 rounded-md shadow-md">
           {children}
         </div>
       )}

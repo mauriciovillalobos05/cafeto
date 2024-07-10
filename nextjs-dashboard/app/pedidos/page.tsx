@@ -1,9 +1,8 @@
 'use client'
 import { useEffect } from 'react';
-import Link from 'next/link';
 import { poppins } from '@/app/ui/fonts';
 import Image from 'next/image';
-import DropdownButton from '@/app/DropDownButton';
+import DropdownButton from '@/app/DownButton';
 
 export default function Page() {
   useEffect(() => {
@@ -20,6 +19,7 @@ export default function Page() {
           height={1365}
           objectFit="contain"
           alt="Captura de pantalla del proyecto de panel de control mostrando versión de escritorio"
+          className="image-animate"
         />
       </div>
       <div className="mt-4 flex grow flex-col gap-4 md:flex-row justify-center mb-10">
