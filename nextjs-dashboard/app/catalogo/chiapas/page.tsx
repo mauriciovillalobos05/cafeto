@@ -4,6 +4,7 @@ import { poppins } from '@/app/ui/fonts';
 import Image from 'next/image';
 import DropdownButton from '@/app/DropDownButton';
 import PedidosLinks from '@/app/ui/dashboard/pedidos';
+import Link from 'next/link';
 
 export default function Page() {
   useEffect(() => {
@@ -27,7 +28,7 @@ export default function Page() {
           <p className={`${poppins.className} text-xl lg:text-3xl mb-4`}>
             <strong>Información General</strong>
           </p>
-          <p className="mb-5">
+          <p className={`${poppins.className} mb-5`}>
             <DropdownButton title="Perfil de taza">
               <strong>Origen:</strong>
               <p className="mb-4">Chiapas Lavado</p>
@@ -41,12 +42,12 @@ export default function Page() {
               <p className="mb-4">82</p>
             </DropdownButton>
           </p>
-          <p className="mb-5">
+          <p className={`${poppins.className} mb-5`}>
             <DropdownButton title="Tueste">
               <img src="/tueste3.png" className="w-40 h-50" alt="Tueste3" />
             </DropdownButton>
           </p>
-          <p className="mb-5">
+          <p className={`${poppins.className} mb-5`}>
             <DropdownButton title="Haz tu pedido">
               <div className="flex flex-row items-center justify-between px-3 py-4 bg-gray-400 md:px-6">
                 <PedidosLinks />
@@ -55,6 +56,76 @@ export default function Page() {
           </p>
         </div>
       </div>
+      <p className={`${poppins.className} text-xl lg:text-xl mb-4`}>
+        <strong>Más productos</strong>
+      </p>
+      <div className="flex grow flex-col gap-4 md:flex-row justify-center">
+        <div className="mt-4 flex grow flex-col p-4 rounded-md">
+          <Link href="/catalogo/mezclaespecial">
+            <Image
+              src="/mezclaespecial.png"
+              layout="intrinsic"
+              width={400}
+              height={566}
+              objectFit="contain"
+              alt="Imagen de MezclaEspecial"
+              className="image-fade" 
+            />
+          </Link>
+        </div>
+        <div className="mt-4 flex grow flex-col p-4 rounded-md">
+          <Link href="/catalogo/oaxaca">
+            <Image
+              src="/oaxaca.png"
+              layout="intrinsic"
+              width={400}
+              height={566}
+              objectFit="contain"
+              alt="Imagen de Oaxaca"
+              className="image-fade" 
+            />
+          </Link>
+        </div>
+        <div className="mt-4 flex grow flex-col p-4 rounded-md">
+          <Link href="/catalogo/veracruz">
+            <Image
+              src="/veracruz.png"
+              layout="intrinsic"
+              width={400}
+              height={566}
+              objectFit="contain"
+              alt="Imagen de Veracruz"
+              className="image-fade" 
+            />
+          </Link>
+        </div>
+        <div className="mt-4 flex grow flex-col p-4 rounded-md">
+          <Link href="/catalogo/nayarit">
+            <Image
+              src="/nayarit.png"
+              layout="intrinsic"
+              width={400}
+              height={566}
+              objectFit="contain"
+              alt="Imagen de Nayarit"
+              className="image-fade" 
+            />
+          </Link>
+        </div>
+        <div className="flex grow flex-col p-4 rounded-md">
+        <Link href="/catalogo/honey">
+          <Image
+            src="/honey.png"
+            layout="intrinsic"
+            width={400}
+            height={566}
+            objectFit="contain"
+            alt="Imagen de Honey"
+            className="image-fade"
+          />
+        </Link>
+        </div>
+      </div>  
     </main>
   );
 }

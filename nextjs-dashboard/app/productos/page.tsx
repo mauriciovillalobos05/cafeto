@@ -41,7 +41,7 @@ export default function Page() {
             width={400}
             height={566}
             objectFit="contain"
-            alt="Imagen de Veracruz"
+            alt="Imagen de MezclaEspecial"
             className="image-fade" // Aplica la clase aquí
           />
         </Link>
@@ -59,7 +59,7 @@ export default function Page() {
             width={400}
             height={566}
             objectFit="contain"
-            alt="Imagen de Veracruz"
+            alt="Imagen de Oaxaca"
             className="image-fade" 
           />
         </Link>
@@ -83,7 +83,7 @@ export default function Page() {
             width={400}
             height={566}
             objectFit="contain"
-            alt="Imagen de Veracruz"
+            alt="Imagen de Chiapas"
             className="image-fade" 
           />
         </Link>
@@ -101,7 +101,7 @@ export default function Page() {
             width={400}
             height={566}
             objectFit="contain"
-            alt="Imagen de Veracruz"
+            alt="Imagen de Honey"
             className="image-fade" 
           />
         </Link>
@@ -112,7 +112,7 @@ export default function Page() {
             width={400}
             height={566}
             objectFit="contain"
-            alt="Imagen de Veracruz"
+            alt="Imagen de Nayarit"
             className="image-fade"
           />
         </Link>
